@@ -1,0 +1,46 @@
+body {
+    position: relative;
+    background:url(/img/beranda.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20%;
+    padding-bottom: 58px;
+    color: #FFFF;
+}
+
+.nav-item {
+    padding: 15px;
+}
+
+.h2 {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand {
+    font-family: "Titan One", sans-serif;
+}
+
+.navbar-nav {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar-nav li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-nav li a:hover {
+    color: #FFFF;
+}
+
+.gradient {
+    background: linear-gradient(#D4D826);
+  }
+
+footer{
+    /* padding: 20px; */
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
