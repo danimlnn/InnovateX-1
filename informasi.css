@@ -9,6 +9,8 @@
 body {
   position: relative;
   background-color: white;
+  background-image: url('Image/background\ vector.jpg');
+  background-size: cover;
 }
 
 nav {
@@ -38,7 +40,7 @@ nav div img {
 nav ul li a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   text-decoration: none;
   padding: 5px 5px;
@@ -102,18 +104,18 @@ a {
     align-items: normal;
     border-radius: 20px;
     border: none;
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: 800;
-    margin: 1rem 0.3rem;
-    padding: 1.5rem 15rem;
-    cursor: pointer;
-    box-shadow: 2px 3px rgba(0, 0, 0, 0.21)
+    font-weight: 900;
+    margin: 2rem 0.3rem;
+    padding: 1.8rem 15rem;
 }
 
 .btn--satu {
     background-color: #EAE7AC;
     color: black;
+    cursor: pointer;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.21)
 }
 
 .btn--satu:hover{
@@ -123,6 +125,8 @@ a {
 .btn--dua{
     background-color: #EAE7AC;
     color: black;
+    cursor: pointer;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.21)
 }
 
 .btn--dua:hover {
@@ -132,6 +136,8 @@ a {
 .btn--tiga {
     background-color: #EAE7AC;
     color: black;
+    cursor: pointer;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.21)
 }
 
 .btn--tiga:hover {
@@ -141,6 +147,8 @@ a {
 .btn--empat {
     background-color: #EAE7AC;
     color: black;
+    cursor: pointer;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.21)
 }
 
 .btn--empat:hover {

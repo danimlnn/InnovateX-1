@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(/Image/image\ 20.png);
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.nav {
+  display: flex;
+  background-color: #EAE7AC;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.5rem;
+  padding: 0.2rem 5rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.21)
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  padding: 0.1rem 2rem;
+}
+
+.nav div img {
+  width: 65px; 
+}
+
+.nav ul li a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid #7B6242(0, 0, 0, 0);
+}
+
+.nav ul li a:hover {
+  color: #ffffff;
+  border-bottom: 1.5px solid #7B6242;
+}
+
+.nav ul li a:active{
+  color: #000000;
+  border-bottom: 1.5px solid #F2F2D3;
+}
+
+.menu-icon {
+  font-size: 28px;
+  display: none;
+}
+
+@media only screen and (max-width : 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav ul li:last-of-type {
+    padding-bottom: 10px;
+  }
+
+  .nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+/*akhir navbar*/
+
+
+.section{
+    margin-right: 200px;
+    margin-left: 200px ;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.h1 {
+  font-family: "Roboto", sans-serif
+}
+
+.card{
+    border-radius: 10px;
+}
+
+.card-img-top{
+    border-radius: 10px;
+}
+
+.card-text{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: x-large
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 270px auto 0;
+  padding: 0;
+  margin-top: 100px;
+  font-size: 15px;
+  border-radius: 0%;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #EAE7AC;
+  line-height: 50px;
+}
+
+.nav-link {
+  color: #000000;
+  font-weight: 500px;
+  position: relative;
+}
+
+.nav-link.active{
+  color: #ffffff;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #533212;
+}
+
+@media (min-width: 991px){
+  .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 8px;
+    background-color: #533212;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+  }
+
+  .nav-link:hover::before{
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+.container {
+    margin-bottom: 284px;
+}

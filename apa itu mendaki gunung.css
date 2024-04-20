@@ -90,7 +90,8 @@ nav ul li a:active{
 
   
   body{
-      background-color: #ffffff;
+      background-image: url(/Image/background\ vector.jpg);
+      background-size: cover;
   }
   
   .section{

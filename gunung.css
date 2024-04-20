@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-image: url(Image/background\ vector.jpg);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  background-color: #EAE7AC;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.5rem;
+  padding: 0.2rem 5rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.21)
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  padding: 0.1rem 2rem;
+}
+
+nav div img {
+  width: 65px; 
+}
+
+nav ul li a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid #7B6242(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  border-bottom: 1.5px solid #7B6242;
+}
+
+nav ul li a:active{
+  color: #000000;
+  border-bottom: 1.5px solid #F2F2D3;
+}
+
+.menu-icon {
+  font-size: 28px;
+  display: none;
+}
+
+@media only screen and (max-width : 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 10px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* main text*/
+
+/*body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}*/
+
+.slide-container {
+    width: 100%;
+    height:85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent
+}
+
+.image-slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    
+}
+
+.slides-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.img{
+    position: relative;
+    width: 220px;
+    height: 340px;
+    transition: 0.5s;
+    border-radius: 20px;    
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.21);
+    object-fit: cover;
+}
+
+.button {
+    position: absolute;
+    width: 220px;
+    height: 340px;
+    transition: 0.5s;
+    background-color: rgba(67, 67, 151, 0.2);
+    border-radius: 20px;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.21)
+}
+
+a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~.image-slider #button-1{
+    width:330px;
+    height: 480px;
+    background-color: transparent;
+}
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~.image-slider #button-2{
+    width:330px;
+    height: 480px;
+    background-color: transparent;
+}
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~.image-slider #button-3{
+    width:330px;
+    height: 480px;
+    background-color: transparent;
+}
+
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~.image-slider #button-4{
+    width:330px;
+    height: 480px;
+    background-color: transparent;
+}
+
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~.image-slider #button-5{
+    width:330px;
+    height: 480px;
+    background-color: transparent;
+}
+
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~.image-slider #button-6{
+    width:330px;
+    height: 480px;
+    background-color: transparent;
+}
+
+#slider-span1:target ~.image-slider{
+    left:70%;
+}
+#slider-span2:target ~.image-slider{
+    left:50%;
+}
+#slider-span3:target ~.image-slider{
+    left:25%;
+}
+
+#slider-span4:target ~.image-slider{
+    left:-25%;
+}
+#slider-span5:target ~.image-slider{
+    left:-50%;
+}
+#slider-span6:target ~.image-slider{
+    left:-70%;
+}

@@ -33,7 +33,7 @@ nav div img {
 nav ul li a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   text-decoration: none;
   padding: 5px 5px;
@@ -85,7 +85,8 @@ nav ul li a:active{
 
   
   body{
-      background-color: #ffffff;
+    background-image: url(Image/background\ vector.jpg);
+    background-size: cover;
   }
   
   .section{
